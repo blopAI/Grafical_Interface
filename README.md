@@ -1,4 +1,4 @@
 # Grafical_Interface
-```npm install http-server```
-```http-server```
-Press ```n```
+```npm install http-server```<br>
+```http-server```<br>
+Press ```n```<br>
