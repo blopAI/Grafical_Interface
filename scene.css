@@ -1,0 +1,23 @@
+#inspector {
+    position: fixed;
+    right: -250px; 
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #eee;
+    transition: right 0.5s; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#inspector.visible {
+    right: 0; 
+}
+
+.model-loader {
+    margin-bottom: 20px;
+}
+
+.model-loader input[type="text"] {
+    width: 30px;
+}

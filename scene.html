@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Car and Obstacle Scene</title>
+    <link rel="stylesheet" href="scene.css"> 
+</head>
+<body>
+    <div id="scene-container"></div>
+    
+    <!-- Meni za objekte -->
+    <div id="inspector">
+        <div class="model-loader" id="obstacle-loader" >
+            Obstacle: <input type="file" id="obstacle-upload" accept=".obj">
+            Texture: <input type="file" id="obstacle-texture-upload" accept="image/*">
+            <input type="number" id="obstacle-x" placeholder="X">
+            <input type="number" id="obstacle-y" placeholder="Y">
+            <input type="number" id="obstacle-z" placeholder="Z">
+            <input type="number" id="moveTo-x" placeholder="location">
+            <button id="move-obstacle">Move to</button>
+        </div>
+        <div class="model-loader" id="car-loader">
+            Car: <input type="file" id="car-upload" accept=".obj">
+            Texture: <input type="file" id="car-texture-upload" accept="image/*">
+            <input type="number" id="car-x" placeholder="X">
+            <input type="number" id="car-y" placeholder="Y">
+            <input type="number" id="car-z" placeholder="Z">
+        </div>
+        <div class="model-loader" id="environment-loader">
+            Environment: <input type="file" id="environment-upload" accept=".obj">
+            Texture: <input type="file" id="environment-texture-upload" accept="image/*">
+            <input type="number" id="environment-x" placeholder="X">
+            <input type="number" id="environment-y" placeholder="Y">
+            <input type="number" id="environment-z" placeholder="Z">
+        </div>
+    </div>
+
+    <script type="module" src="scene.js"></script>
+</body>
+</html>
